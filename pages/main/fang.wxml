@@ -1,0 +1,15 @@
+<!--pages/main/fang.wxml-->
+<block wx:for="{{fang}}" wx:key="userInfoListId">
+<navigator url="show?id={{item.id}}" open-type="navigate">
+  <view class='fang-list'>
+    <view class='float-left'>
+    <view>{{item.fangTitle}}{{item.fangAddress}}</view>
+    <view class='text-gary'>{{item.m2}}平方 {{item.fang}}房{{item.ting}}厅{{item.wc}}卫</view>
+    </view>
+    <view class='float-right text-red text-bold'>{{item.price}}万</view>
+    <view class='clear'></view>
+  </view>
+</navigator>
+</block>  
+
+

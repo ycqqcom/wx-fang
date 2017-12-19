@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/main/fang",
+    "pages/main/main",
+    "pages/main/zu",
+    "pages/main/agents",
+    "pages/main/sale",
+    "pages/main/show"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4bc488",
+    "navigationBarTitleText": "阳春房产",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#f4ea2a",
+    "backgroundColor": "#4bc488",
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "text": "首页",
+        "iconPath": "pages/img/home.png",
+        "selectedIconPath": "pages/img/homeS.png"
+      },
+      {
+        "pagePath": "pages/main/fang",
+        "text": "出售",
+        "iconPath": "pages/img/house.png",
+        "selectedIconPath": "pages/img/houseS.png"
+      },
+      {
+        "pagePath": "pages/main/zu",
+        "text": "出租",
+        "iconPath": "pages/img/zu.png",
+        "selectedIconPath": "pages/img/zuS.png"
+      },
+      {
+        "pagePath": "pages/main/agents",
+        "text": "中介",
+        "iconPath": "pages/img/agent.png",
+        "selectedIconPath": "pages/img/agentS.png"
+      },
+      {
+        "pagePath": "pages/main/sale",
+        "text": "放盘",
+        "iconPath": "pages/img/salehouse.png",
+        "selectedIconPath": "pages/img/salehouseS.png"
+      }
+    ]
+  },
+  "debug": true
+}

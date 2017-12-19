@@ -1,0 +1,38 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+.main {width: 100%;margin:0 auto}
+.m96 {width: 96%;margin: 0 auto}
+.text-blue {color: #59bdf8}
+.text-green {color: #46c385}
+.text-orange {color: #fca32f}
+.text-red {color: #fe6d67}
+.text-gary {color: #666}
+.text-bold {font-weight: bold}
+.text-center {text-align: center}
+.margin-top {margin-top: 16rpx}
+.clear {clear: both}
+.float-left {float: left}
+.float-right {float: right}
+
+.pages {text-align: center;margin:16rpx}
+.pages text {color: #999;font-size: 0.8rem}
+.pages navigator {width: 30%;height:2rem;line-height:2rem;background: #46c385;color: #fff;border-radius: 6rpx;}
+.pages .prv {float: left;}
+.pages .next {float: right;}
+
+.table {width:100%;border-top:1px solid #ccc;border-left: 1px solid #ccc}
+.table-no-top {border-top:none}
+.tb4-1 {float: left;width:50%;}
+.tb4-2 {float: left;width:30%;}
+.tb4-3 {float: left;width:15%;}
+.tb4-4 {float: left;width:20%;}
+.tb {border-right: 1px solid #ccc;border-bottom: 1px solid #ccc;margin-left:-1px;overflow: hidden;height: 2rem;line-height: 2rem}

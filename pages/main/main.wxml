@@ -1,0 +1,49 @@
+<!--pages/main/main.wxml-->
+<view class='main headinfo'>
+  <view class='headinfobox text-center'><text class='text-bold'>{{counts.fangCount}}</text>出售</view>
+  <view class='headinfobox text-center'><text class='text-bold'>{{counts.zuCount}}</text>出租</view>
+  <view class='headinfobox text-center'><text class='text-bold'>{{counts.agentCount}}</text>中介</view>
+  <view class='clear'></view>
+</view>
+ <view class='m96'>
+    <view class='table text-bold text-center margin-top'>
+      <text class='tb4-1 tb'>楼盘地址</text>
+      <text class='tb4-2 tb'>户型</text>
+      <!-- <text class='tb4-3 tb'>面积</text> -->
+      <text class='tb4-4 tb'>价格</text>
+      <view class='clear'></view>
+    </view>
+  </view>
+<view wx:for="{{fang}}" wx:key="userInfoListId" class='m96'>
+<view class='table table-no-top text-center'>
+      <text class='tb4-1 tb'>
+       <text wx:if="{{item.fangTitle > 0}}">{{item.fangTitle}}</text>
+    <text wx:else>{{item.fangAddress}}</text>
+      </text>
+      <text class='tb4-2 tb'>{{item.fang}}房{{item.ting}}厅{{item.wc}}卫</text>
+      <!-- <text class='tb4-3 tb'>{{item.m2}}</text> -->
+      <text class='tb4-4 tb text-red'>{{item.price}}万</text>
+      <view class='clear'></view>
+  </view>
+<!-- <view class='fanglist'>
+  <view class='fangTitle text-strong'>
+    <text class='fangPrice text-red'>{{item.price}}万</text>
+    <text wx:if="{{item.fangTitle > 0}}">{{item.fangTitle}}</text>
+    <text wx:else>{{item.fangAddress}}</text>
+    <text class='fangting'>{{item.fang}}房{{item.ting}}厅{{item.wc}}卫</text>
+  </view>
+  <view class='text-gary'>
+    <view>{{item.m2}}平方</view>
+    <view>楼层：{{item.inFloor}}/{{item.floor}}</view>
+    <view>装修：
+    <text wx:if="{{item.zhuangxiu == 1}}">精装修</text>
+    <text wx:if="{{item.zhuangxiu == 2}}">简单装修</text>
+    <text wx:if="{{item.zhuangxiu == 3}}">豪华装修</text>
+    <text wx:if="{{item.zhuangxiu == 4}}">毛坯</text>
+    </view> 
+  </view>
+  </view> -->
+
+ 
+</view>  
+

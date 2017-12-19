@@ -1,0 +1,5 @@
+/* pages/main/main.wxss */
+.fangPrice {margin-right: 0.5rem}
+.headinfo {background: #46c385;color: #fff}
+.headinfo .headinfobox {float:left;width: 33.3%;}
+.headinfo .headinfobox .text-bold {display: block;font-size: 1.4rem}

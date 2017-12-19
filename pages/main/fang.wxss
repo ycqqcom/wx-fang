@@ -1,0 +1,4 @@
+/* pages/main/fang.wxss */
+.fang-list {border-bottom: 1px solid #ccc;padding: 10rpx}
+.fang-list .float-left {width:80%;line-height: 1.6rem}
+.fang-list .text-gary {font-size: 0.8rem;}

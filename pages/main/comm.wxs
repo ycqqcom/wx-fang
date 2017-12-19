@@ -1,0 +1,23 @@
+var zhuangxiu = function(zxId){
+  switch(zxId){
+    case 1:
+      return '精装修';
+      break;
+    case 2:
+      return '简单装修';
+      break;
+    case 3:
+      return '豪华装修';
+      break;
+    default : return '毛坯';
+  }
+}
+
+var show = function(d){
+  return d;
+}
+
+module.exports = {
+  zx: zhuangxiu,
+  show : show
+};
