@@ -1,2 +1,19 @@
 <!--pages/main/show.wxml-->
-<block></block>
+<block>
+  <view class='m96'>
+    <view><text>价格：</text><text class="text-red text-bold">￥663万</text></view>
+    <view><text>楼盘：</text>东湖 商品房</view>
+    <view><text>户型：</text>3房2厅3卫</view>
+    <view><text>面积：</text>141平方</view>
+    <view><text>屋向：</text>北</view>
+    <view><text>装修：</text>精装修</view>
+    <view><text>配套：</text>东湖地段 步梯商品房</view>
+    <view><text>更新：</text>2017-12-18 09:49:32</view>
+  </view>
+</block>
+
+
+
+
+
+
