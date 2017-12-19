@@ -5,14 +5,25 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    id:12
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var that = this
+    wx.request({
+      url: 'http://127.0.0.1/jd/w.php/api/index/fangShow/',
+      headers: { 'Content-Type': 'application/json' },
+      data:{
+        id:options.id
+      },
+      success(res){
+        that.setData({fang:res.data})
+      }
+     
+    })
   },
 
   /**

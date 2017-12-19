@@ -1,20 +1,20 @@
 <!--pages/main/show.wxml-->
-<block>
+<block wx:for="{{fang}}" wx:key="userInfoListId">
   <view class='m96'>
-    <view><text>价格：</text><text class="text-red text-bold">￥663万</text></view>
-    <view><text>楼盘：</text>东湖 商品房</view>
-    <view><text>户型：</text>3房2厅3卫</view>
-    <view><text>面积：</text>141平方</view>
-    <view><text>屋向：</text>北</view>
+    <view>{{item.fangName}} {{item.fangAddress}} {{item.fangTitle}}</view>
+    <view><text>价格：</text><text class="text-red text-bold">￥{{item.price}}万</text></view>
+    <view><text>户型：</text>{{item.fang}}房{{item.ting}}厅{{item.wc}}卫</view>
+    <view><text>面积：</text>{{item.m2}}平方</view>
+    <view><text>屋向：</text>{{item.fangxiang}}</view>
+    <view><text>年代：</text>{{item.year}}</view>
     <view><text>装修：</text>精装修</view>
-    <view><text>配套：</text>东湖地段 步梯商品房</view>
+    <view><text>配套：</text>{{item.peitao}}</view>
     <view><text>更新：</text>2017-12-18 09:49:32</view>
   </view>
   <view>
-    <block>
-      <image  src="https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/0.jpg"></image>
-    </block>
+<image mode="aspectFit" style="width:100%;background:#eee" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513706356032&di=d380c48bf7d8ec0037fce8e9655223f3&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimage%2Fc0%253Dshijue1%252C0%252C0%252C294%252C40%2Fsign%3Da183711571f40ad101e9cfa03f457baa%2F63d9f2d3572c11df0214f90e692762d0f603c2d2.jpg"></image>
   </view>
+       
 </block>
 
 

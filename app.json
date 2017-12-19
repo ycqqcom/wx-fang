@@ -1,11 +1,13 @@
 {
   "pages": [
+    
     "pages/main/fang",
     "pages/main/main",
     "pages/main/zu",
     "pages/main/agents",
     "pages/main/sale",
     "pages/main/show"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
