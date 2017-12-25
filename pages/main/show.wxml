@@ -7,14 +7,10 @@
     <view><text>面积：</text>{{item.m2}}平方</view>
     <view><text>屋向：</text>{{item.fangxiang}}</view>
     <view><text>年代：</text>{{item.year}}</view>
-    <view><text>装修：</text>
-      <text wx:if="{{item.zhuangxiu}} = 1">精装修</text>
-      <text wx:elif="{{item.zhuangxiu}} = 2">简单装修</text>
-      <text wx:elif="{{item.zhuangxiu}} = 3">豪华装修</text>
-      <text wx:else>毛坯</text>
-    </view>
+    <view><text>装修：{{item.zhuangxiu}}</text></view>
     <view><text>配套：</text>{{item.peitao}}</view>
     <view><text>更新：</text>{{item.updates}}</view>
+    <view class='phone'>{{phone}}</view>
   </view>
   <view class='m96 fangPic'>
   <view wx:if="{{item.pic1}}">

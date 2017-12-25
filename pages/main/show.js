@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    id:12
+    id:'',
+    phone:''
   },
 
   /**
@@ -20,10 +21,12 @@ Page({
         id:options.id
       },
       success(res){
-        that.setData({fang:res.data})
+        that.setData({fang:res.data}),
+        that.setData({phone:res.data[1].phone})
+        // console.log(res.data[1].phone)
       }
-     
     })
+   
   },
 
   /**
