@@ -1,6 +1,11 @@
 <!--pages/main/show.wxml-->
 <block wx:for="{{fang}}" wx:key="userInfoListId">
   <view class='m96'>
+    <view class='face'><image mode="widthFix" style="width:60px;height:60px" src="http://www.ycqq.com/mall/w/uploads/house/{{item.face}}"></image></view>
+    <view class='name'>{{item.name}}</view>
+  </view>
+  <view class='clear'></view>
+  <view class='m96 clear'>
     <view>{{item.fangName}} {{item.fangAddress}} {{item.fangTitle}}</view>
     <view><text>价格：</text><text class="text-red text-bold">￥{{item.price}}万</text></view>
     <view><text>户型：</text>{{item.fang}}房{{item.ting}}厅{{item.wc}}卫</view>
@@ -10,7 +15,7 @@
     <view><text>装修：{{item.zhuangxiu}}</text></view>
     <view><text>配套：</text>{{item.peitao}}</view>
     <view><text>更新：</text>{{item.updates}}</view>
-    <view class='phone'>{{phone}}</view>
+    <view class='phone'>{{item.phone}}</view>
   </view>
   <view class='m96 fangPic'>
   <view wx:if="{{item.pic1}}">

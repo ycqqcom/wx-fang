@@ -1,2 +1,4 @@
 /* pages/main/show.wxss */
 .phone {background: #46c385;color: #fff;padding: 0.3em 0.6em;border-radius: 6px;text-align:center;margin:1em;}
+.face {float:left;width:60px;height: 60px;}
+.name {float: left;margin-left: 16px;width: 300px;}

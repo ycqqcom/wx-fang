@@ -21,8 +21,8 @@ Page({
         id:options.id
       },
       success(res){
-        that.setData({fang:res.data}),
-        that.setData({phone:res.data[1].phone})
+        that.setData({fang:res.data})
+        // that.setData({phone:res.data[1].phone})
         // console.log(res.data[1].phone)
       }
     })
