@@ -16,7 +16,7 @@ Page({
   onLoad: function (options) {
     var that = this
     wx.request({
-      url: 'http://127.0.0.1/jd/w.php/api/index/fang',
+      url: 'http://192.168.171.1/jd/w.php/api/index/fang',
       data:{
         pageSize:10,
         page:1
@@ -43,7 +43,7 @@ Page({
   onShow: function () {
     var that = this
     wx.request({
-      url: 'http://127.0.0.1/jd/w.php/api/index/getPage/pagename/fang/num/20',
+      url: 'http://192.168.171.1/jd/w.php/api/index/getPage/pagename/fang/num/20',
       headers: { 'Content-Type': 'application/json' },
       success:function(res){
         that.setData({pages:res.data})

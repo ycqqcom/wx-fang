@@ -15,7 +15,7 @@ Page({
   onLoad: function (options) {
     var that = this
     wx.request({
-      url: 'http://127.0.0.1/jd/w.php/api/index/fangShow/',
+      url: 'http://192.168.171.1/jd/w.php/api/index/fangShow/',
       headers: { 'Content-Type': 'application/json' },
       data:{
         id:options.id
