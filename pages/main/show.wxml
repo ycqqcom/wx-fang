@@ -37,7 +37,6 @@
     <image mode="widthFix" style="width:100%;background:#eee" src="http://www.ycqq.com/mall/w/uploads/house/{{item.pic6}}"></image>
   </view>
   </view>
-       <view></view>
 </block>
 
 
